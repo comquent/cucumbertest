@@ -3,9 +3,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import cucumber.annotation.en.Given; 
-import cucumber.annotation.en.Then; 
-import cucumber.annotation.en.When; 
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+import cucumber.api.java.en.Then;
 
 public class cucumberJava { 
    WebDriver driver = null; 
@@ -18,6 +18,12 @@ public class cucumberJava {
    public void goToFacebook() { 
       driver.navigate().to("https://www.facebook.com/"); 
    } 
+
+   @When("^I open Comquent website$") 
+   public void goToComquent() { 
+      driver.navigate().to("https://www.comquent.com/"); 
+   } 
+
    @Then("^Login button should exits$") 
    public void loginButton() { 
       if(driver.findElement(By.id("u_0_v")).isEnabled()) { 
