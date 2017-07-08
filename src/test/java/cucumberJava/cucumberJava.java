@@ -11,7 +11,7 @@ public class cucumberJava {
    WebDriver driver = null; 
    @Given("^I have open the browser$") 
    public void openBrowser() {
-	  System.setProperty("webdriver.chrome.driver", "C:\\workspaces\\cucumber\\webdriver\\chromedriver.exe");
+//	 System.setProperty("webdriver.chrome.driver", "C:\\workspaces\\cucumber\\webdriver\\chromedriver.exe");
       driver = new ChromeDriver(); 
    } 
    @When("^I open Facebook website$") 
